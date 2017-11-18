@@ -2,7 +2,7 @@
 ![Shell](https://etc.usf.edu/clipart/87700/87746/87746_conch-shell_md.gif)
 
 [![Build Status](https://travis-ci.org/frikiman34/goshell.svg?branch=master)](https://travis-ci.org/frikiman34/goshell)
-[![BCH compliance](https://bettercodehub.com/edge/badge/frikiman34/FuenteovejunaFinderApi?branch=master)](https://bettercodehub.com/)
+[![BCH compliance](https://bettercodehub.com/edge/badge/frikiman34/goshell?branch=master)](https://bettercodehub.com/)
 
 Small cli for Go
 
