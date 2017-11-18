@@ -38,7 +38,6 @@ func NewShell(prompt string, exitSequence string, writer *os.File, reader *os.Fi
 		reader: bufio.NewScanner(reader),
 		writer: bufio.NewWriter(writer),
 	}
-	s.RegistrerCommand("command-list", s.listCommands)
 	return s
 }
 
@@ -47,8 +46,12 @@ func NewShell(prompt string, exitSequence string, writer *os.File, reader *os.Fi
 //	- Prompt is '~> '
 //	- The exit command is 'exit'
 //	- The default io is stdout and stdin 
+// Also it adds the "command-list" command. command-list is something
+// like "help"
 func NewDefaultShell() Shell {
-	return NewShell("~> ", "exit", os.Stdout, os.Stdin)
+	shell := NewShell("~> ", "exit", os.Stdout, os.Stdin)
+	shell.RegistrerCommand("command-list", shell.listCommands)
+	return shell
 }
 
 // RegistrerCommand registrers a new command. You should pass a command name
