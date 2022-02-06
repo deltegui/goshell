@@ -6,7 +6,7 @@
 
 Small cli for Go
 
-##Example of use
+## Example of use
 ```go
 package main
 
